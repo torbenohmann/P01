@@ -3,18 +3,18 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "SearchAlgorithm.h"
+//#include "SearchAlgorithm.h"
+#include "CGridtypeMap.h"
 
 int main() {
 	std::string filename = "map03.CSV";
 	
 	/* -= Test 1: Instanziierung eines Objekts vom Typ CGridtypeMap und Einlesen einer Karte aus einer csv-Datei =- */
-	/*
+
 	CGridtypeMap map;
 
 	int lines = map.importMap(filename);
 	std::cout << "WIDTH: " << map.mapWidth() << "\t HEIGHT: " << map.mapHeight() << "\n";
-	*/
 	
 
 	/* -= Test 2: Ausgabe der eingelesenen Karte in der Konsole =- */
