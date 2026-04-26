@@ -18,10 +18,10 @@ int main() {
 	
 
 	/* -= Test 2: Ausgabe der eingelesenen Karte in der Konsole =- */
-	/*
-	system("pause");
-	map.toConsole(true);
-	*/
+	
+	system("read -p 'Press Enter to continue...' var");
+	map.toConsole(false);
+	
 	
 
 	/* -= Test 3: Instanziierung eines Objekts vom Typ CMapIterator =- */

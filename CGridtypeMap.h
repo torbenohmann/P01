@@ -47,6 +47,15 @@ class CGridtypeMap{
             return map.size();
         }
 
-        //void toConsole(bool);
+        void toConsole(bool displayCost){
+            system("clear");
+            for(auto& line : map){
+                for(auto& tile : line){
+                    if(tile.type == TileType::obstacle) cout << "#";
+                    else if (tile.type == TileType::trail) cout << (displayCost ? to_string(tile.cost) : " ");
+                }
+                cout << endl;
+            }
+        }
         //CMapIterator& leapIn(const GridCoordinate& coords);
 };
