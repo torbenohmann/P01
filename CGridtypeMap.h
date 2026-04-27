@@ -5,7 +5,7 @@
 #include <fstream>
 
 #include "Pathfinder.h"
-//#include "CMapIterator.h"
+#include "CMapIterator.h"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ using namespace std;
 class CGridtypeMap{
     private:
         vector<vector<GridTile>> map;
-        //CMapIterator it;
+        CMapIterator it;
     public:
         unsigned int mapWidth(){
             int maxWidth = 0;
@@ -57,5 +57,8 @@ class CGridtypeMap{
                 cout << endl;
             }
         }
-        //CMapIterator& leapIn(const GridCoordinate& coords);
+
+        CMapIterator& leapIn(const GridCoordinate& coords){
+            return it;
+        };
 };
