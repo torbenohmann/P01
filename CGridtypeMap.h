@@ -11,6 +11,7 @@ class CGridtypeMap{
         vector<vector<GridTile>> map;
         CMapIterator it;
     public:
+        CGridtypeMap(): it(map) {};
         unsigned int mapWidth();
         unsigned int mapHeight();
         int importMap(const string& filename);
