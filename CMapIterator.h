@@ -35,9 +35,27 @@ public:
 
         return true;
     };
-    //void moveBack();
-    //bool moveNorth();
-    //bool moveSouth();
-    //bool moveWest();
-    //bool moveEast();
+    void moveBack(){
+        posInternal = lastPos;
+    };
+    bool moveNorth(){
+        GridCoordinate tmpPos = posInternal;
+        tmpPos.y -= 1;
+        return jumpToPosition(tmpPos);
+    };
+    bool moveSouth(){
+        GridCoordinate tmpPos = posInternal;
+        tmpPos.y += 1;
+        return jumpToPosition(tmpPos);
+    };
+    bool moveWest(){
+        GridCoordinate tmpPos = posInternal;
+        tmpPos.x -= 1;
+        return jumpToPosition(tmpPos);
+    };
+    bool moveEast(){
+        GridCoordinate tmpPos = posInternal;
+        tmpPos.x += 1;
+        return jumpToPosition(tmpPos);
+    };
 };

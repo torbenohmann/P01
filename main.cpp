@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-//#include "SearchAlgorithm.h"
+#include "SearchAlgorithm.h"
 #include "CGridtypeMap.h"
 
 int main() {
@@ -20,7 +20,7 @@ int main() {
 	/* -= Test 2: Ausgabe der eingelesenen Karte in der Konsole =- */
 	
 	system("read -p 'Press Enter to continue...' var"); // geändert für bash
-	map.toConsole(false);
+	map.toConsole(true);
 	
 	
 
@@ -33,7 +33,7 @@ int main() {
 	
 
 	/* -= Test 4: Anwendung des Pfadsuchealgorithmus auf die Karte =- */
-	/*
+	
 	std::vector<GridCoordinate> A;			// In diesem Vektor wird der gefunden Pfad vom Start zum Ziel gespeichert (wenn es einen gibt)
 	GridCoordinate start, ziel;
 	start.x = 3; 
@@ -54,7 +54,7 @@ int main() {
 	}
 	else 
 		std::cout << "Es wurde kein Pfad gefunden.\n";
-	*/
+	
 
 	return EXIT_SUCCESS;
 }
