@@ -19,17 +19,17 @@ int main() {
 
 	/* -= Test 2: Ausgabe der eingelesenen Karte in der Konsole =- */
 	
-	system("read -p 'Press Enter to continue...' var");
+	system("read -p 'Press Enter to continue...' var"); // geändert für bash
 	map.toConsole(false);
 	
 	
 
 	/* -= Test 3: Instanziierung eines Objekts vom Typ CMapIterator =- */
-	/*
-	system("pause");
+	
+	system("read -p 'Press Enter to continue...' var"); //geändert für bash
 	CMapIterator it = map.leapIn(GridCoordinate{ 1, 1 });
 	std::cout << "\nAktuelle Position des CMapIterator-Objekts: " << it.getPosition() << "\n";
-	*/
+	
 	
 
 	/* -= Test 4: Anwendung des Pfadsuchealgorithmus auf die Karte =- */

@@ -15,6 +15,9 @@ class CGridtypeMap{
         vector<vector<GridTile>> map;
         CMapIterator it;
     public:
+        CGridtypeMap() : it(map) { 
+            map = {};
+        };
         unsigned int mapWidth(){
             int maxWidth = 0;
             for(int i = 0;i<map.size();i++){
@@ -59,6 +62,7 @@ class CGridtypeMap{
         }
 
         CMapIterator& leapIn(const GridCoordinate& coords){
+            it.jumpToPosition(coords);
             return it;
         };
 };
