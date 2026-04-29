@@ -51,7 +51,7 @@ class CGridtypeMap{
         }
 
         void toConsole(bool displayCost){
-            system("clear");
+            system("cls");
             for(auto& line : map){
                 for(auto& tile : line){
                     if(tile.type == TileType::obstacle) cout << "#";

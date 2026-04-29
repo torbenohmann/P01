@@ -25,8 +25,4 @@ struct GridCoordinate {
 	bool operator== (const GridCoordinate& c) const {
 		return x == c.x && y == c.y;
 	}
-
-	bool operator!= (const GridCoordinate& c) const {
-		return !(x == c.x && y == c.y);
-	}
 };

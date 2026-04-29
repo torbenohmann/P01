@@ -2,17 +2,16 @@
 #include "Pathfinder.h"
 #include <iostream>
 #include <fstream>
+#include <string>
 
 std::vector<std::vector<GridTile>> map;
 
 int importMap_Vorbereitung(std::string path){
     std::ifstream csvFile(path);
     if(csvFile.fail()) return 0;
-
     map.clear();
-    
     std::string line;
-    while (getline(csvFile, line)) {
+    while (std::getline(csvFile, line)) {
         map.push_back({});
         for(char& c : line){
             if(c == '*'){
