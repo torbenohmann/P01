@@ -15,7 +15,6 @@ class CGridtypeMap{
         vector<vector<GridTile>> map;
         //CMapIterator it;
     public:
-        CGridtypeMap();
         unsigned int mapWidth(){
             int maxWidth = 0;
             for(int i = 0;i<map.size();i++){
