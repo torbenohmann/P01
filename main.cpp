@@ -19,8 +19,8 @@ int main() {
 
 	/* -= Test 2: Ausgabe der eingelesenen Karte in der Konsole =- */
 	
-	system("read -p 'Press Enter to continue...' var");
-	map.toConsole(false);
+	system("pause");
+	map.toConsole(true);
 	
 	
 

@@ -48,10 +48,10 @@ class CGridtypeMap{
         }
 
         void toConsole(bool displayCost){
-            system("clear");
+            system("cls");
             for(auto& line : map){
                 for(auto& tile : line){
-                    if(tile.type == TileType::obstacle) cout << "#";
+                    if(tile.type == TileType::obstacle) cout << char(219);
                     else if (tile.type == TileType::trail) cout << (displayCost ? to_string(tile.cost) : " ");
                 }
                 cout << endl;
